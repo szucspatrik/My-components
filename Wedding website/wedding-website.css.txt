@@ -1,0 +1,358 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Single-direction margin declaration to establish vertical rhythm. */
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,
+img, section {
+    margin-bottom: 1.5rem;
+}
+
+/* === BASE STYLES === */
+
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #444349;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  line-height: 6rem;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+}
+
+a,
+p {
+  font-family: 'Muli', sans-serif;
+}
+
+a {
+  color: #bd806e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .2s ease-in-out;
+}
+
+/* =============================
+
+          HERO STYLES
+
+=============================*/
+
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: .5rem 1rem;
+  display: table;
+  text-align: center;
+  color: white;
+}
+
+.hero-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.hero-text {
+  margin: 0 auto;
+  padding: .625rem;
+  background-color: hsla(100,0%,0%,.5);
+}
+
+.hero-text h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.15rem;
+  line-height: 4rem;
+  color: #d2ba87;
+  margin-bottom: 0; /* To negate the effect of the single-direction margin declaration. */
+}
+
+.tagline {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+
+/* =============================
+
+      LOCATIONS STYLES
+
+=============================*/
+
+.blurb::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+
+.blurb, ul {
+  font-family: 'Muli', sans-serif;
+}
+
+.blurb img {
+  height: 7.5rem;
+}
+
+.blurb h3 {
+  font-weight: 700;
+}
+
+
+/* =============================
+
+        PROGRAM STYLES
+
+=============================*/
+
+.program, .faq {
+  background-color: hsla(100,0%,0%,.6);
+  width: 100vw;
+  color: #d2ba87;
+}
+
+.program {
+  text-align: left;
+}
+
+.program h2 {
+  text-align: center;
+}
+
+.program p {
+  font-style: italic;
+}
+
+.program ul {
+  letter-spacing: .025rem;
+}
+
+/* =============================
+
+        GIFTS STYLES
+
+=============================*/
+
+.gifts p:last-child {
+  margin-bottom: 0;
+}
+
+.gifts img {
+  height: 7.5rem;
+}
+
+/* =============================
+
+        FAQ STYLES
+
+=============================*/
+
+.question-group::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+
+.question {
+  font-weight: 700;
+  margin-bottom: .5rem
+}
+
+.answer {
+  margin-bottom: 2rem;
+}
+
+.faq p {
+  text-align: left;
+}
+
+/* =============================
+
+        FOOTER STYLES
+
+=============================*/
+
+footer {
+  background-color: #606060;
+  color: #fff;
+  display: table;
+  height: 10vh;
+  width: 100vw;
+}
+
+.footer-wrapper {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+small {
+  font-size: .8125rem;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* =============================
+
+TABLET AND DESKTOP - HERO STYLES
+
+=============================*/
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+  .hero-text {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%
+  }
+
+  .hero-text h1 {
+    font-size: 7rem;
+    line-height: 10rem;
+  }
+
+}
+
+/* =============================
+
+TABLET AND DESKTOP - LOCATIONS STYLES
+
+=============================*/
+
+@media (min-width: 768px) {
+
+  .blurb {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .blurb::after {
+    display: none;
+  }
+
+}
+
+/* =============================
+
+TABLET AND DESKTOP - PROGRAM STYLES
+
+=============================*/
+
+@media (min-width: 768px) {
+
+  .program {
+    text-align: center;
+  }
+
+}
+
+/* =============================
+
+TABLET AND DESKTOP - FAQ STYLES
+
+=============================*/
+
+@media (min-width: 768px) {
+
+  .question-group {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .question-group::after {
+    display: none;
+  }
+
+}
+
+/* =============================
+
+TABLET AND DESKTOP - FOOTER STYLES
+
+=============================*/
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
